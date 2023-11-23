@@ -1,0 +1,2 @@
+# SchoolMgmt
+School Management 
