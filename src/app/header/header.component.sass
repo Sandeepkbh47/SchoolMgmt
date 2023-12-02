@@ -1,0 +1,42 @@
+$font-size: 14px
+
+.header-logo
+    height: 20vh
+    display: flex
+    place-items: center
+    gap: 50px
+
+.school-name
+    letter-spacing: 8px
+    display: flex
+    flex-direction: column
+.logo
+    object-fit: contain
+    width: inherit
+    height: 90%
+    filter: invert(0.7) drop-shadow(15px 15px 7px black)
+    padding: 0px 16px
+
+.school-img-container
+    width: 70%
+    height: inherit
+    flex-grow: 1
+    display: flex
+    place-content: flex-end
+
+.school-img
+    object-fit: cover
+    width: inherit
+    height: inherit
+    object-position: 50% 60%
+    mask-image: linear-gradient(90deg,transparent 2%, black 26%,black 74%, transparent 100%)
+
+.nav-header
+    $size: 100%
+    width: $size
+    height: 5vh
+    display: flex
+    font-size: $font-size
+    place-content: space-around
+    place-items: center
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)
