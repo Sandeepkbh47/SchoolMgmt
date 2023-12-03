@@ -31,12 +31,49 @@ $font-size: 14px
     object-position: 50% 60%
     mask-image: linear-gradient(90deg,transparent 2%, black 26%,black 74%, transparent 100%)
 
-.nav-header
+.navbar
     $size: 100%
     width: $size
     height: 5vh
     display: flex
+    margin: auto
     font-size: $font-size
     place-content: space-around
-    place-items: center
+    place-items: flex-end
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)
+
+.nav-header
+    width: 80%
+    display: flex
+    font-size: 14px
+    place-content: space-around
+    place-items: flex-end
+.dropdown
+    display: block
+    border-radius: 10px 10px 0 0
+    cursor: pointer
+
+.dropdown-content
+    display: none
+    width: 20%
+    flex-direction: column
+    position: absolute
+    padding: 15px 1px
+    background: #f0efef
+    border-radius: 0 10px 10px 10px
+    box-shadow: 1px 8px 10px 2px #00000038
+    a
+        text-decoration: none
+        padding: 5px 6px
+    a:hover
+        background: #80808026
+
+.dropdown:hover
+    background: #dedede
+
+.dropdown-content:hover
+    display: flex
+
+.dropdown:hover .dropdown-content
+    display: flex
+    background: #f0efef

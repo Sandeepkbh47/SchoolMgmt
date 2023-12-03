@@ -1,0 +1,35 @@
+.home-container
+    display: flex
+    flex-direction: column
+
+.ma-container
+    display: grid
+    grid-template-columns: 45% 45%
+    width: 80%
+    margin: 4% auto
+    gap: 5%
+// .mission
+//     background: linear-gradient(45deg, #5aca78, #f0a80178)
+//     background-size: 200% 200%
+//     animation:15s ease-in 0s alternate infinite anm_flow
+.mission-content
+    background: linear-gradient(45deg, #f0a80166, white, #37e06554)
+    background-size: 200% 200%
+    animation: 2s ease-in 0s alternate infinite _ngcontent-ng-c2187874643_anm_flow
+    
+.lbl-heading
+    $size: 18px
+    font-size: $size
+    font-weight: bold
+.announcement-content
+    display: flex
+    flex-direction: column
+    gap:10px
+
+@keyframes anm_flow
+    0%
+        background-position:10% 0%
+    50%
+        background-position:91% 100%
+    100%
+        background-position:10% 0%
